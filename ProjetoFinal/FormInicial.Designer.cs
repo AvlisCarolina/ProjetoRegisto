@@ -36,7 +36,6 @@
             this.contactosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.suporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reiniciarAppToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportarBugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.denunciarProblemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.osMeusDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -92,32 +91,31 @@
             // apresentaçãoEValoresToolStripMenuItem
             // 
             this.apresentaçãoEValoresToolStripMenuItem.Name = "apresentaçãoEValoresToolStripMenuItem";
-            this.apresentaçãoEValoresToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.apresentaçãoEValoresToolStripMenuItem.Text = "Nosso &Objetivo";
+            this.apresentaçãoEValoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.apresentaçãoEValoresToolStripMenuItem.Text = "&Definição";
             // 
             // nossosTerapeutasToolStripMenuItem
             // 
             this.nossosTerapeutasToolStripMenuItem.Name = "nossosTerapeutasToolStripMenuItem";
-            this.nossosTerapeutasToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.nossosTerapeutasToolStripMenuItem.Text = "Nossos &Terapeutas";
+            this.nossosTerapeutasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nossosTerapeutasToolStripMenuItem.Text = "&Objetivos";
             // 
             // guiaDeUtilizaçãoToolStripMenuItem
             // 
             this.guiaDeUtilizaçãoToolStripMenuItem.Name = "guiaDeUtilizaçãoToolStripMenuItem";
-            this.guiaDeUtilizaçãoToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.guiaDeUtilizaçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.guiaDeUtilizaçãoToolStripMenuItem.Text = "&Guia de Utilização";
             // 
             // contactosToolStripMenuItem1
             // 
             this.contactosToolStripMenuItem1.Name = "contactosToolStripMenuItem1";
-            this.contactosToolStripMenuItem1.Size = new System.Drawing.Size(171, 22);
+            this.contactosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.contactosToolStripMenuItem1.Text = "&Contactos";
             // 
             // suporteToolStripMenuItem
             // 
             this.suporteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.reiniciarAppToolStripMenuItem,
-            this.reportarBugToolStripMenuItem,
             this.denunciarProblemaToolStripMenuItem});
             this.suporteToolStripMenuItem.Name = "suporteToolStripMenuItem";
             this.suporteToolStripMenuItem.Size = new System.Drawing.Size(60, 28);
@@ -128,12 +126,6 @@
             this.reiniciarAppToolStripMenuItem.Name = "reiniciarAppToolStripMenuItem";
             this.reiniciarAppToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.reiniciarAppToolStripMenuItem.Text = "&Reiniciar App";
-            // 
-            // reportarBugToolStripMenuItem
-            // 
-            this.reportarBugToolStripMenuItem.Name = "reportarBugToolStripMenuItem";
-            this.reportarBugToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.reportarBugToolStripMenuItem.Text = "Reportar &Bug";
             // 
             // denunciarProblemaToolStripMenuItem
             // 
@@ -155,8 +147,8 @@
             // osMeusDadosToolStripMenuItem
             // 
             this.osMeusDadosToolStripMenuItem.Name = "osMeusDadosToolStripMenuItem";
-            this.osMeusDadosToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.osMeusDadosToolStripMenuItem.Text = "Os Meus Dados";
+            this.osMeusDadosToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.osMeusDadosToolStripMenuItem.Text = "&Os Meus Dados";
             this.osMeusDadosToolStripMenuItem.Click += new System.EventHandler(this.osMeusDadosToolStripMenuItem_Click);
             // 
             // osMeusRegistosToolStripMenuItem
@@ -166,8 +158,8 @@
             this.novoRegistoDiárioToolStripMenuItem,
             this.adicionarRegistoCriseToolStripMenuItem});
             this.osMeusRegistosToolStripMenuItem.Name = "osMeusRegistosToolStripMenuItem";
-            this.osMeusRegistosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.osMeusRegistosToolStripMenuItem.Text = "Os Meus &Registos";
+            this.osMeusRegistosToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.osMeusRegistosToolStripMenuItem.Text = "&Registos";
             // 
             // consultarToolStripMenuItem2
             // 
@@ -180,6 +172,7 @@
             this.novoRegistoDiárioToolStripMenuItem.Name = "novoRegistoDiárioToolStripMenuItem";
             this.novoRegistoDiárioToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.novoRegistoDiárioToolStripMenuItem.Text = "Adicionar Registo &Diário";
+            this.novoRegistoDiárioToolStripMenuItem.Click += new System.EventHandler(this.novoRegistoDiárioToolStripMenuItem_Click);
             // 
             // adicionarRegistoCriseToolStripMenuItem
             // 
@@ -194,7 +187,7 @@
             this.contactosToolStripMenuItem2,
             this.mudarTerapeutaToolStripMenuItem});
             this.terapeutaToolStripMenuItem1.Name = "terapeutaToolStripMenuItem1";
-            this.terapeutaToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
+            this.terapeutaToolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
             this.terapeutaToolStripMenuItem1.Text = "&Terapeuta";
             // 
             // contactosToolStripMenuItem2
@@ -212,7 +205,7 @@
             // eliminarContaToolStripMenuItem1
             // 
             this.eliminarContaToolStripMenuItem1.Name = "eliminarContaToolStripMenuItem1";
-            this.eliminarContaToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
+            this.eliminarContaToolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
             this.eliminarContaToolStripMenuItem1.Text = "&Eliminar Conta";
             // 
             // terapeutaToolStripMenuItem
@@ -244,14 +237,14 @@
             // registosDiáriosToolStripMenuItem
             // 
             this.registosDiáriosToolStripMenuItem.Name = "registosDiáriosToolStripMenuItem";
-            this.registosDiáriosToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.registosDiáriosToolStripMenuItem.Text = "&Ver Registos";
+            this.registosDiáriosToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.registosDiáriosToolStripMenuItem.Text = "&Dados";
             // 
             // relatóriosToolStripMenuItem
             // 
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.relatóriosToolStripMenuItem.Text = "Relatórios";
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.relatóriosToolStripMenuItem.Text = "&Registos";
             // 
             // eliminarContaToolStripMenuItem
             // 
@@ -276,8 +269,8 @@
             // 
             this.tsmEntrar.Name = "tsmEntrar";
             this.tsmEntrar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsmEntrar.Size = new System.Drawing.Size(116, 22);
-            this.tsmEntrar.Text = "Entrar";
+            this.tsmEntrar.Size = new System.Drawing.Size(156, 22);
+            this.tsmEntrar.Text = "Iniciar Sessão";
             this.tsmEntrar.Click += new System.EventHandler(this.tsmEntrar_Click);
             // 
             // tsmRegistar
@@ -286,7 +279,7 @@
             this.tsmRegistar.Name = "tsmRegistar";
             this.tsmRegistar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tsmRegistar.Size = new System.Drawing.Size(180, 22);
-            this.tsmRegistar.Text = "Registar";
+            this.tsmRegistar.Text = "Novo Utilizador";
             this.tsmRegistar.Click += new System.EventHandler(this.tsmRegistar_Click);
             // 
             // FormInicial
@@ -326,7 +319,6 @@
         private System.Windows.Forms.ToolStripMenuItem suporteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contactosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem reiniciarAppToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reportarBugToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem osMeusDadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem osMeusRegistosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem2;

@@ -44,3 +44,4 @@ C:\Users\ana_s\Desktop\RepositóriosGitHub\ProjetoRegisto\ProjetoFinal\obj\Debug
 C:\Users\ana_s\Desktop\RepositóriosGitHub\ProjetoRegisto\ProjetoFinal\obj\Debug\ProjetoFinal.DadosPaciente.resources
 C:\Users\ana_s\Desktop\RepositóriosGitHub\ProjetoRegisto\ProjetoFinal\obj\Debug\ProjetoFinal.DadosTerapeuta.resources
 C:\Users\ana_s\Desktop\RepositóriosGitHub\ProjetoRegisto\ProjetoFinal\obj\Debug\ProjetoFinal.RegistoCrise.resources
+C:\Users\ana_s\Desktop\RepositóriosGitHub\ProjetoRegisto\ProjetoFinal\obj\Debug\ProjetoFinal.RegistoDiario.resources

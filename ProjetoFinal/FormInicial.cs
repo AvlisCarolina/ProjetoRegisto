@@ -13,12 +13,14 @@ namespace ProjetoFinal
     public partial class FormInicial : Form
     {
         //instanciar forms
+ 
         DadosPaciente formDadosPaciente = new DadosPaciente();
         DadosTerapeuta formDadosTerapeuta = new DadosTerapeuta();
         FormEntrar formIniciarSessao = new FormEntrar();
         FormRegistar formRegistar = new FormRegistar();
 
         RegistoCrise formRegistoCrise = new RegistoCrise();
+        RegistoDiario formRegistoDiario = new RegistoDiario();
         public FormInicial()
         {
             InitializeComponent();
@@ -102,6 +104,22 @@ namespace ProjetoFinal
 
             formRegistoCrise.Show();
             formRegistoCrise.Activate();
+        }
+
+        private void novoRegistoDiárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (formRegistoDiario.IsDisposed)
+            {
+                formRegistoDiario = new RegistoDiario();
+            }
+            formRegistoDiario.MdiParent = this;
+            formRegistoDiario.StartPosition = FormStartPosition.CenterScreen;
+            //formRegistoDiario.WindowState = FormWindowState.Maximized;
+            formRegistoDiario.MinimizeBox = false;
+            formRegistoDiario.MaximizeBox = false;
+
+            formRegistoDiario.Show();
+            formRegistoDiario.Activate();
         }
     }
 }

@@ -111,6 +111,12 @@
     <Compile Include="RegistoCrise.Designer.cs">
       <DependentUpon>RegistoCrise.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistoDiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistoDiario.Designer.cs">
+      <DependentUpon>RegistoDiario.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DadosPaciente.resx">
       <DependentUpon>DadosPaciente.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +147,9 @@
     </Compile>
     <EmbeddedResource Include="RegistoCrise.resx">
       <DependentUpon>RegistoCrise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistoDiario.resx">
+      <DependentUpon>RegistoDiario.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DatabaseHelper.datasource" />
