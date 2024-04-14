@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.bntAtualizar = new System.Windows.Forms.Button();
             this.mtbContacto = new System.Windows.Forms.MaskedTextBox();
             this.cbEspecialidade = new System.Windows.Forms.ComboBox();
             this.txtNomeTerapeuta = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.bntAtualizar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -44,8 +46,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -63,12 +63,38 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(7, 11);
+            this.groupBox1.Location = new System.Drawing.Point(125, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(552, 438);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Pessoais";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(32, 180);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(130, 16);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Breve apresentação";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(35, 209);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(455, 148);
+            this.richTextBox1.TabIndex = 19;
+            this.richTextBox1.Text = "";
+            // 
+            // bntAtualizar
+            // 
+            this.bntAtualizar.Location = new System.Drawing.Point(187, 390);
+            this.bntAtualizar.Name = "bntAtualizar";
+            this.bntAtualizar.Size = new System.Drawing.Size(177, 32);
+            this.bntAtualizar.TabIndex = 18;
+            this.bntAtualizar.Text = "Atualizar Dados Pessoais";
+            this.bntAtualizar.UseVisualStyleBackColor = true;
             // 
             // mtbContacto
             // 
@@ -130,15 +156,6 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Nome:";
             // 
-            // bntAtualizar
-            // 
-            this.bntAtualizar.Location = new System.Drawing.Point(187, 390);
-            this.bntAtualizar.Name = "bntAtualizar";
-            this.bntAtualizar.Size = new System.Drawing.Size(177, 32);
-            this.bntAtualizar.TabIndex = 18;
-            this.bntAtualizar.Text = "Atualizar Dados Pessoais";
-            this.bntAtualizar.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
@@ -150,7 +167,7 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(7, 455);
+            this.groupBox2.Location = new System.Drawing.Point(125, 466);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(552, 262);
             this.groupBox2.TabIndex = 21;
@@ -217,28 +234,11 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Email:";
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(35, 209);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(455, 148);
-            this.richTextBox1.TabIndex = 19;
-            this.richTextBox1.Text = "";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 180);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 16);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Breve apresentação";
-            // 
             // DadosTerapeuta
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(565, 730);
+            this.ClientSize = new System.Drawing.Size(800, 749);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

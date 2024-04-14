@@ -44,18 +44,19 @@
             this.novoRegistoDiárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adicionarRegistoCriseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.terapeutaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.contactosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.informacaoTerapeutaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.mudarTerapeutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarContaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.terapeutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoTerapeutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registosDiáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dadosPacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmEntrar = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmRegistar = new System.Windows.Forms.ToolStripMenuItem();
+            this.terminarSessãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,25 +92,25 @@
             // apresentaçãoEValoresToolStripMenuItem
             // 
             this.apresentaçãoEValoresToolStripMenuItem.Name = "apresentaçãoEValoresToolStripMenuItem";
-            this.apresentaçãoEValoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.apresentaçãoEValoresToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.apresentaçãoEValoresToolStripMenuItem.Text = "&Definição";
             // 
             // nossosTerapeutasToolStripMenuItem
             // 
             this.nossosTerapeutasToolStripMenuItem.Name = "nossosTerapeutasToolStripMenuItem";
-            this.nossosTerapeutasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nossosTerapeutasToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.nossosTerapeutasToolStripMenuItem.Text = "&Objetivos";
             // 
             // guiaDeUtilizaçãoToolStripMenuItem
             // 
             this.guiaDeUtilizaçãoToolStripMenuItem.Name = "guiaDeUtilizaçãoToolStripMenuItem";
-            this.guiaDeUtilizaçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.guiaDeUtilizaçãoToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.guiaDeUtilizaçãoToolStripMenuItem.Text = "&Guia de Utilização";
             // 
             // contactosToolStripMenuItem1
             // 
             this.contactosToolStripMenuItem1.Name = "contactosToolStripMenuItem1";
-            this.contactosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.contactosToolStripMenuItem1.Size = new System.Drawing.Size(168, 22);
             this.contactosToolStripMenuItem1.Text = "&Contactos";
             // 
             // suporteToolStripMenuItem
@@ -166,6 +167,7 @@
             this.consultarToolStripMenuItem2.Name = "consultarToolStripMenuItem2";
             this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(201, 22);
             this.consultarToolStripMenuItem2.Text = "&Ver Registos";
+            this.consultarToolStripMenuItem2.Click += new System.EventHandler(this.consultarToolStripMenuItem2_Click);
             // 
             // novoRegistoDiárioToolStripMenuItem
             // 
@@ -184,23 +186,25 @@
             // terapeutaToolStripMenuItem1
             // 
             this.terapeutaToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.contactosToolStripMenuItem2,
+            this.informacaoTerapeutaToolStripMenuItem2,
             this.mudarTerapeutaToolStripMenuItem});
             this.terapeutaToolStripMenuItem1.Name = "terapeutaToolStripMenuItem1";
             this.terapeutaToolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
             this.terapeutaToolStripMenuItem1.Text = "&Terapeuta";
             // 
-            // contactosToolStripMenuItem2
+            // informacaoTerapeutaToolStripMenuItem2
             // 
-            this.contactosToolStripMenuItem2.Name = "contactosToolStripMenuItem2";
-            this.contactosToolStripMenuItem2.Size = new System.Drawing.Size(163, 22);
-            this.contactosToolStripMenuItem2.Text = "&Contactos";
+            this.informacaoTerapeutaToolStripMenuItem2.Name = "informacaoTerapeutaToolStripMenuItem2";
+            this.informacaoTerapeutaToolStripMenuItem2.Size = new System.Drawing.Size(189, 22);
+            this.informacaoTerapeutaToolStripMenuItem2.Text = "&Informação Terapeuta";
+            this.informacaoTerapeutaToolStripMenuItem2.Click += new System.EventHandler(this.informacaoTerapeutaToolStripMenuItem2_Click);
             // 
             // mudarTerapeutaToolStripMenuItem
             // 
             this.mudarTerapeutaToolStripMenuItem.Name = "mudarTerapeutaToolStripMenuItem";
-            this.mudarTerapeutaToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.mudarTerapeutaToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.mudarTerapeutaToolStripMenuItem.Text = "&Mudar Terapeuta";
+            this.mudarTerapeutaToolStripMenuItem.Click += new System.EventHandler(this.mudarTerapeutaToolStripMenuItem_Click);
             // 
             // eliminarContaToolStripMenuItem1
             // 
@@ -221,35 +225,37 @@
             // novoTerapeutaToolStripMenuItem
             // 
             this.novoTerapeutaToolStripMenuItem.Name = "novoTerapeutaToolStripMenuItem";
-            this.novoTerapeutaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.novoTerapeutaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novoTerapeutaToolStripMenuItem.Text = "&Os Meus Dados";
             this.novoTerapeutaToolStripMenuItem.Click += new System.EventHandler(this.novoTerapeutaToolStripMenuItem_Click);
             // 
             // pacientesToolStripMenuItem
             // 
             this.pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registosDiáriosToolStripMenuItem,
+            this.dadosPacientesToolStripMenuItem,
             this.relatóriosToolStripMenuItem});
             this.pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
-            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pacientesToolStripMenuItem.Text = "&Pacientes";
             // 
-            // registosDiáriosToolStripMenuItem
+            // dadosPacientesToolStripMenuItem
             // 
-            this.registosDiáriosToolStripMenuItem.Name = "registosDiáriosToolStripMenuItem";
-            this.registosDiáriosToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
-            this.registosDiáriosToolStripMenuItem.Text = "&Dados";
+            this.dadosPacientesToolStripMenuItem.Name = "dadosPacientesToolStripMenuItem";
+            this.dadosPacientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dadosPacientesToolStripMenuItem.Text = "&Dados";
+            this.dadosPacientesToolStripMenuItem.Click += new System.EventHandler(this.dadosPacientesToolStripMenuItem_Click);
             // 
             // relatóriosToolStripMenuItem
             // 
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.relatóriosToolStripMenuItem.Text = "&Registos";
+            this.relatóriosToolStripMenuItem.Click += new System.EventHandler(this.relatóriosToolStripMenuItem_Click);
             // 
             // eliminarContaToolStripMenuItem
             // 
             this.eliminarContaToolStripMenuItem.Name = "eliminarContaToolStripMenuItem";
-            this.eliminarContaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.eliminarContaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarContaToolStripMenuItem.Text = "&Eliminar Conta";
             // 
             // toolStripMenuItem1
@@ -257,7 +263,8 @@
             this.toolStripMenuItem1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmEntrar,
-            this.tsmRegistar});
+            this.tsmRegistar,
+            this.terminarSessãoToolStripMenuItem});
             this.toolStripMenuItem1.Image = global::ProjetoFinal.Properties.Resources.Person;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -269,8 +276,10 @@
             // 
             this.tsmEntrar.Name = "tsmEntrar";
             this.tsmEntrar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsmEntrar.Size = new System.Drawing.Size(156, 22);
-            this.tsmEntrar.Text = "Iniciar Sessão";
+            this.tsmEntrar.RightToLeftAutoMirrorImage = true;
+            this.tsmEntrar.Size = new System.Drawing.Size(158, 22);
+            this.tsmEntrar.Text = "&Iniciar Sessão";
+            this.tsmEntrar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.tsmEntrar.Click += new System.EventHandler(this.tsmEntrar_Click);
             // 
             // tsmRegistar
@@ -278,15 +287,25 @@
             this.tsmRegistar.AutoSize = false;
             this.tsmRegistar.Name = "tsmRegistar";
             this.tsmRegistar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tsmRegistar.RightToLeftAutoMirrorImage = true;
             this.tsmRegistar.Size = new System.Drawing.Size(180, 22);
-            this.tsmRegistar.Text = "Novo Utilizador";
+            this.tsmRegistar.Text = "&Novo Utilizador";
             this.tsmRegistar.Click += new System.EventHandler(this.tsmRegistar_Click);
+            // 
+            // terminarSessãoToolStripMenuItem
+            // 
+            this.terminarSessãoToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.terminarSessãoToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.terminarSessãoToolStripMenuItem.Name = "terminarSessãoToolStripMenuItem";
+            this.terminarSessãoToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.terminarSessãoToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.terminarSessãoToolStripMenuItem.Text = "&Terminar Sessão";
             // 
             // FormInicial
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::ProjetoFinal.Properties.Resources.backgroungImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1101, 635);
@@ -294,7 +313,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
             this.Name = "FormInicial";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -325,17 +343,18 @@
         private System.Windows.Forms.ToolStripMenuItem novoRegistoDiárioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adicionarRegistoCriseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem terapeutaToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem contactosToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem informacaoTerapeutaToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem mudarTerapeutaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarContaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem denunciarProblemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novoTerapeutaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pacientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem registosDiáriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dadosPacientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarContaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tsmEntrar;
         private System.Windows.Forms.ToolStripMenuItem tsmRegistar;
+        private System.Windows.Forms.ToolStripMenuItem terminarSessãoToolStripMenuItem;
     }
 }

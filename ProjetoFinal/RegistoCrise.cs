@@ -16,5 +16,15 @@ namespace ProjetoFinal
         {
             InitializeComponent();
         }
+
+        private void clbSentimentos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //fazer select para adicionar sentimentos
+        }
+
+        private void clbSensacoes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //fazer select para add sensações
+        }
     }
 }

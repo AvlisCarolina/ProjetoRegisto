@@ -45,3 +45,8 @@ C:\Users\ana_s\Desktop\RepositóriosGitHub\ProjetoRegisto\ProjetoFinal\obj\Debug
 C:\Users\ana_s\Desktop\RepositóriosGitHub\ProjetoRegisto\ProjetoFinal\obj\Debug\ProjetoFinal.DadosTerapeuta.resources
 C:\Users\ana_s\Desktop\RepositóriosGitHub\ProjetoRegisto\ProjetoFinal\obj\Debug\ProjetoFinal.RegistoCrise.resources
 C:\Users\ana_s\Desktop\RepositóriosGitHub\ProjetoRegisto\ProjetoFinal\obj\Debug\ProjetoFinal.RegistoDiario.resources
+C:\Users\ana_s\Desktop\RepositóriosGitHub\ProjetoRegisto\ProjetoFinal\obj\Debug\ProjetoFinal.VerRegistosPaciente.resources
+C:\Users\ana_s\Desktop\RepositóriosGitHub\ProjetoRegisto\ProjetoFinal\obj\Debug\ProjetoFinal.informacaoTerapeuta.resources
+C:\Users\ana_s\Desktop\RepositóriosGitHub\ProjetoRegisto\ProjetoFinal\obj\Debug\ProjetoFinal.MudarTerapeuta.resources
+C:\Users\ana_s\Desktop\RepositóriosGitHub\ProjetoRegisto\ProjetoFinal\obj\Debug\ProjetoFinal.InformacaoPacientes.resources
+C:\Users\ana_s\Desktop\RepositóriosGitHub\ProjetoRegisto\ProjetoFinal\obj\Debug\ProjetoFinal.VerRegistosTerapeuta.resources

@@ -15,12 +15,20 @@ namespace ProjetoFinal
         //instanciar forms
  
         DadosPaciente formDadosPaciente = new DadosPaciente();
+        RegistoCrise formRegistoCrise = new RegistoCrise();
+        RegistoDiario formRegistoDiario = new RegistoDiario();
+        VerRegistosPaciente formVerRegistosPaciente = new VerRegistosPaciente();
+        informacaoTerapeuta formInformacaoTerapeuta = new informacaoTerapeuta();
+        MudarTerapeuta formMudarTerapeuta = new MudarTerapeuta();
+
         DadosTerapeuta formDadosTerapeuta = new DadosTerapeuta();
+        InformacaoPacientes formInformacaoPacientes = new InformacaoPacientes();
+        VerRegistosTerapeuta formVerRegistosTerapeuta = new VerRegistosTerapeuta();
+
         FormEntrar formIniciarSessao = new FormEntrar();
         FormRegistar formRegistar = new FormRegistar();
 
-        RegistoCrise formRegistoCrise = new RegistoCrise();
-        RegistoDiario formRegistoDiario = new RegistoDiario();
+        
         public FormInicial()
         {
             InitializeComponent();
@@ -29,12 +37,19 @@ namespace ProjetoFinal
         private void FormInicial_Load(object sender, EventArgs e)
         {
             //pacienteToolStripMenuItem.Visible = false;
-            //terapeutaToolStripMenuItem.Visible=false;
+            //terapeutaToolStripMenuItem.Visible = false;
+            //terminarSessãoToolStripMenuItem.Visible = false;
+
+            //Fazer dispose do form existente quando um é aberto
         }
 
         private void tsmEntrar_Click(object sender, EventArgs e)
         {
-            //Fazer dispose dos forms
+            
+            // mudar label do login/singup pada "Bem vindo + {Nome utilizador}"
+            // tornar visível a parte paciente ou terapeuta ou ambos, consoante o tipo de sessão.
+            // Depois de entrar desativar visibilidade da opção Iniciar sessão e Registar do login
+            // tornar visível a opção de Terminar Sessão
 
             if (formIniciarSessao.IsDisposed)
             {
@@ -48,6 +63,8 @@ namespace ProjetoFinal
 
         private void tsmRegistar_Click(object sender, EventArgs e)
         {
+            // Depois do registo abre form de entrar
+
             if (formRegistar.IsDisposed)
             {
                 formRegistar = new FormRegistar();
@@ -120,6 +137,88 @@ namespace ProjetoFinal
 
             formRegistoDiario.Show();
             formRegistoDiario.Activate();
+        }
+
+        private void consultarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            if (formVerRegistosPaciente.IsDisposed)
+            {
+                formVerRegistosPaciente = new VerRegistosPaciente();
+            }
+            formVerRegistosPaciente.MdiParent = this;
+            formVerRegistosPaciente.StartPosition = FormStartPosition.CenterScreen;
+            //formVerRegistosPaciente.WindowState = FormWindowState.Maximized;
+            formVerRegistosPaciente.MinimizeBox = false;
+            formVerRegistosPaciente.MaximizeBox = false;
+
+            formVerRegistosPaciente.Show();
+            formVerRegistosPaciente.Activate();
+
+        }
+
+        private void informacaoTerapeutaToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            if (formInformacaoTerapeuta.IsDisposed)
+            {
+                formInformacaoTerapeuta = new informacaoTerapeuta();
+            }
+            formInformacaoTerapeuta.MdiParent = this;
+            formInformacaoTerapeuta.StartPosition = FormStartPosition.CenterScreen;
+            //formInformacaoTerapeuta.WindowState = FormWindowState.Maximized;
+            formInformacaoTerapeuta.MinimizeBox = false;
+            formInformacaoTerapeuta.MaximizeBox = false;
+
+            formInformacaoTerapeuta.Show();
+            formInformacaoTerapeuta.Activate();
+
+        }
+
+        private void mudarTerapeutaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (formMudarTerapeuta.IsDisposed)
+            {
+                formMudarTerapeuta = new MudarTerapeuta();
+            }
+            formMudarTerapeuta.MdiParent = this;
+            formMudarTerapeuta.StartPosition = FormStartPosition.CenterScreen;
+            //formMudarTerapeuta.WindowState = FormWindowState.Maximized;
+            formMudarTerapeuta.MinimizeBox = false;
+            formMudarTerapeuta.MaximizeBox = false;
+
+            formMudarTerapeuta.Show();
+            formMudarTerapeuta.Activate();
+        }
+
+        private void dadosPacientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (formInformacaoPacientes.IsDisposed)
+            {
+                formInformacaoPacientes = new InformacaoPacientes();
+            }
+            formInformacaoPacientes.MdiParent = this;
+            formInformacaoPacientes.StartPosition = FormStartPosition.CenterScreen;
+            //formInformacaoPacientes.WindowState = FormWindowState.Maximized;
+            formInformacaoPacientes.MinimizeBox = false;
+            formInformacaoPacientes.MaximizeBox = false;
+
+            formInformacaoPacientes.Show();
+            formInformacaoPacientes.Activate();
+        }
+
+        private void relatóriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (formVerRegistosTerapeuta.IsDisposed)
+            {
+                formVerRegistosTerapeuta = new VerRegistosTerapeuta();
+            }
+            formVerRegistosTerapeuta.MdiParent = this;
+            formVerRegistosTerapeuta.StartPosition = FormStartPosition.CenterScreen;
+            //formVerRegistosTerapeuta.WindowState = FormWindowState.Maximized;
+            formVerRegistosTerapeuta.MinimizeBox = false;
+            formVerRegistosTerapeuta.MaximizeBox = false;
+
+            formVerRegistosTerapeuta.Show();
+            formVerRegistosTerapeuta.Activate();
         }
     }
 }

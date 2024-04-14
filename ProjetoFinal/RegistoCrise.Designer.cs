@@ -35,7 +35,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.clbSentimentos = new System.Windows.Forms.CheckedListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.richTextBox1);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.checkedListBox2);
+            this.groupBox1.Controls.Add(this.clbSentimentos);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.comboBox3);
             this.groupBox1.Controls.Add(this.label5);
@@ -130,6 +130,7 @@
             this.clbSensacoes.Name = "clbSensacoes";
             this.clbSensacoes.Size = new System.Drawing.Size(707, 196);
             this.clbSensacoes.TabIndex = 19;
+            this.clbSensacoes.SelectedIndexChanged += new System.EventHandler(this.clbSensacoes_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -175,13 +176,13 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "Selecione todos os sentimentos experienciados.";
             // 
-            // checkedListBox2
+            // clbSentimentos
             // 
-            this.checkedListBox2.CheckOnClick = true;
-            this.checkedListBox2.ColumnWidth = 185;
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.HorizontalScrollbar = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
+            this.clbSentimentos.CheckOnClick = true;
+            this.clbSentimentos.ColumnWidth = 185;
+            this.clbSentimentos.FormattingEnabled = true;
+            this.clbSentimentos.HorizontalScrollbar = true;
+            this.clbSentimentos.Items.AddRange(new object[] {
             "Alegria",
             "Tristeza",
             "Medo",
@@ -226,11 +227,12 @@
             "Paciência",
             "Tolerancia",
             "Intolerancia"});
-            this.checkedListBox2.Location = new System.Drawing.Point(36, 444);
-            this.checkedListBox2.MultiColumn = true;
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(707, 196);
-            this.checkedListBox2.TabIndex = 12;
+            this.clbSentimentos.Location = new System.Drawing.Point(36, 444);
+            this.clbSentimentos.MultiColumn = true;
+            this.clbSentimentos.Name = "clbSentimentos";
+            this.clbSentimentos.Size = new System.Drawing.Size(707, 196);
+            this.clbSentimentos.TabIndex = 12;
+            this.clbSentimentos.SelectedIndexChanged += new System.EventHandler(this.clbSentimentos_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -391,7 +393,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckedListBox checkedListBox2;
+        private System.Windows.Forms.CheckedListBox clbSentimentos;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label5;
