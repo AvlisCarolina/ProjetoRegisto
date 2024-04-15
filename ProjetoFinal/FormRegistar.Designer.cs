@@ -63,9 +63,9 @@
             this.gbDadosConta.Controls.Add(this.cbTipoAcesso);
             this.gbDadosConta.Controls.Add(this.label2);
             this.gbDadosConta.Location = new System.Drawing.Point(17, 16);
-            this.gbDadosConta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbDadosConta.Margin = new System.Windows.Forms.Padding(4);
             this.gbDadosConta.Name = "gbDadosConta";
-            this.gbDadosConta.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbDadosConta.Padding = new System.Windows.Forms.Padding(4);
             this.gbDadosConta.Size = new System.Drawing.Size(591, 269);
             this.gbDadosConta.TabIndex = 1;
             this.gbDadosConta.TabStop = false;
@@ -74,7 +74,7 @@
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(151, 214);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(372, 22);
             this.txtPassword.TabIndex = 8;
@@ -82,7 +82,7 @@
             // txtUserName
             // 
             this.txtUserName.Location = new System.Drawing.Point(151, 156);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(372, 22);
             this.txtUserName.TabIndex = 7;
@@ -90,7 +90,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(153, 102);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(372, 22);
             this.txtEmail.TabIndex = 6;
@@ -132,7 +132,7 @@
             "Paciente",
             "Terapeuta"});
             this.cbTipoAcesso.Location = new System.Drawing.Point(151, 41);
-            this.cbTipoAcesso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbTipoAcesso.Margin = new System.Windows.Forms.Padding(4);
             this.cbTipoAcesso.Name = "cbTipoAcesso";
             this.cbTipoAcesso.Size = new System.Drawing.Size(372, 24);
             this.cbTipoAcesso.TabIndex = 2;
@@ -140,18 +140,19 @@
             // btnRegistar
             // 
             this.btnRegistar.Location = new System.Drawing.Point(231, 310);
-            this.btnRegistar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegistar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistar.Name = "btnRegistar";
             this.btnRegistar.Size = new System.Drawing.Size(176, 28);
             this.btnRegistar.TabIndex = 2;
             this.btnRegistar.Text = "Registar";
             this.btnRegistar.UseVisualStyleBackColor = true;
+            this.btnRegistar.Click += new System.EventHandler(this.btnRegistar_Click);
             // 
             // btnVoltar
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.Location = new System.Drawing.Point(254, 346);
-            this.btnVoltar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(127, 28);
             this.btnVoltar.TabIndex = 3;
@@ -169,10 +170,11 @@
             this.Controls.Add(this.gbDadosConta);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormRegistar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Registar";
+            this.Load += new System.EventHandler(this.FormRegistar_Load);
             this.gbDadosConta.ResumeLayout(false);
             this.gbDadosConta.PerformLayout();
             this.ResumeLayout(false);

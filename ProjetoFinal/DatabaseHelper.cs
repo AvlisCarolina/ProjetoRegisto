@@ -208,15 +208,16 @@ public class DatabaseHelper
                         ('Tolerância'),
                         ('Intolerância');";
 
-                // Data inputs for inicial tests
+                
 
-                /*string insertRolesDataQuery = @"
+                string insertRolesDataQuery = @"
                     INSERT INTO acessos (nivelAcesso) VALUES 
                         ('Administrador'),
                         ('Terapeuta'),
                         ('Paciente');";
-
-                string insertUsersDataQuery = @"
+                
+                // Data inputs for inicial tests
+                /*string insertUsersDataQuery = @"
                     INSERT INTO utilizadores (email,userName,password,idAcesso) VALUES
                         ('ana_silva@admin.pt', 'ASilva', '1234', 1),
                         ('matt_al@terapia.pt', 'Matt', '4321', 2),
@@ -258,14 +259,12 @@ public class DatabaseHelper
 
                     command.CommandText = insertFeelingsDataQuery;
                     command.ExecuteNonQuery();
-
-
-
-                    //Insert query for test
-                    /*command.CommandText = insertRolesDataQuery;
+                    
+                    command.CommandText = insertRolesDataQuery;
                     command.ExecuteNonQuery();
-
-                    command.CommandText = insertUsersDataQuery;
+                    
+                    //Insert query for test
+                    /*command.CommandText = insertUsersDataQuery;
                     command.ExecuteNonQuery();*/
                 }
             }

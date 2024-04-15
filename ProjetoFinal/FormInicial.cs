@@ -13,6 +13,7 @@ namespace ProjetoFinal
     public partial class FormInicial : Form
     {
         //instanciar forms
+        public int atualLogin;
  
         DadosPaciente formDadosPaciente = new DadosPaciente();
         RegistoCrise formRegistoCrise = new RegistoCrise();
@@ -25,22 +26,23 @@ namespace ProjetoFinal
         InformacaoPacientes formInformacaoPacientes = new InformacaoPacientes();
         VerRegistosTerapeuta formVerRegistosTerapeuta = new VerRegistosTerapeuta();
 
-        FormEntrar formIniciarSessao = new FormEntrar();
+        FormEntrar formIniciarSessao;
         FormRegistar formRegistar = new FormRegistar();
 
         
         public FormInicial()
         {
             InitializeComponent();
+            formIniciarSessao = new FormEntrar(this);
         }
 
         private void FormInicial_Load(object sender, EventArgs e)
         {
-            //pacienteToolStripMenuItem.Visible = false;
-            //terapeutaToolStripMenuItem.Visible = false;
-            //terminarSessãoToolStripMenuItem.Visible = false;
+            pacienteToolStripMenuItem.Visible = false;
+            terapeutaToolStripMenuItem.Visible = false;
+            terminarSessãoToolStripMenuItem.Visible = false;
 
-            //Fazer dispose do form existente quando um é aberto
+            //Fazer dispose do form existente quando um outro é aberto
         }
 
         private void tsmEntrar_Click(object sender, EventArgs e)
@@ -53,7 +55,7 @@ namespace ProjetoFinal
 
             if (formIniciarSessao.IsDisposed)
             {
-                formIniciarSessao = new FormEntrar();
+                formIniciarSessao = new FormEntrar(this);
             }
             formIniciarSessao.MdiParent = this;
             formIniciarSessao.StartPosition = FormStartPosition.CenterScreen;
@@ -219,6 +221,44 @@ namespace ProjetoFinal
 
             formVerRegistosTerapeuta.Show();
             formVerRegistosTerapeuta.Activate();
+        }
+
+        public void Perfil(string perfil,string acesso, int idUtilizador)
+        {
+            atualLogin = idUtilizador;
+
+            toolStripMenuItem1.Text = perfil;
+            tsmEntrar.Visible = false;
+            tsmRegistar.Visible = false;
+            terminarSessãoToolStripMenuItem.Visible = true;
+
+            if (acesso == "Terapeuta")
+            {
+                terapeutaToolStripMenuItem.Visible = true;
+                pacienteToolStripMenuItem.Visible = false;
+
+            }
+
+            else if (acesso == "Paciente")
+            {
+                pacienteToolStripMenuItem.Visible = true;
+                terapeutaToolStripMenuItem.Visible = false;
+            }
+            else
+            {
+                terapeutaToolStripMenuItem.Visible = true;
+                pacienteToolStripMenuItem.Visible = true;
+            }
+        }
+
+        private void terminarSessãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            toolStripMenuItem1.Text = "LogIn/SingUp";
+            tsmEntrar.Visible = true;
+            tsmRegistar.Visible = true;
+            terminarSessãoToolStripMenuItem.Visible = false;
+            pacienteToolStripMenuItem.Visible = false;
+            terapeutaToolStripMenuItem.Visible = false;
         }
     }
 }

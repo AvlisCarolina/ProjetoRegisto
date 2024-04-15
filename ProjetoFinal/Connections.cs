@@ -21,26 +21,26 @@ namespace ProjetoFinal
             }
             catch (SQLiteException ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Erro ao iniciar conexão." + ex.Message);
                 throw (ex);
             }
         }
 
-        //public void CloseConnection()
-        //{
-        //    var connection = new SQLiteConnection(connectionString);
-        //    // Método responsável por abrir a conexão com o banco de dados.
-        //    try
-        //    {
-        //        connection.Close();
-        //        return true;
-        //    }
-        //    catch (SQLiteException ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //        return false;
-        //    }
-        //}
+        public SQLiteConnection CloseConnection()
+        {
+            var connection = new SQLiteConnection(DatabaseHelper.connectionString);
+            // Método responsável por abrir a conexão com o banco de dados.
+            try
+            {
+                connection.Close();
+                return connection;
+            }
+            catch (SQLiteException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return connection;
+            }
+        }
 
         /*public void PreencherDataGridView1(ref DataGridView dgv)
         {
