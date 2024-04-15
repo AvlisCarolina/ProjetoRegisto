@@ -29,9 +29,16 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnVisualizar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.mtbContacto = new System.Windows.Forms.MaskedTextBox();
@@ -40,16 +47,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btnImprimir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -57,13 +57,33 @@
             this.groupBox1.Controls.Add(this.btnVisualizar);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Location = new System.Drawing.Point(17, 16);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(770, 347);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lista de Pacientes";
+            // 
+            // btnVisualizar
+            // 
+            this.btnVisualizar.Image = global::ProjetoFinal.Properties.Resources.b_view;
+            this.btnVisualizar.Location = new System.Drawing.Point(511, 292);
+            this.btnVisualizar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnVisualizar.Name = "btnVisualizar";
+            this.btnVisualizar.Size = new System.Drawing.Size(234, 35);
+            this.btnVisualizar.TabIndex = 4;
+            this.btnVisualizar.Text = "Visualizar Paciente Selecionado";
+            this.btnVisualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVisualizar.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(27, 37);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(718, 238);
+            this.dataGridView1.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -91,25 +111,69 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados Paciente";
             // 
-            // dataGridView1
+            // btnImprimir
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 37);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(718, 238);
-            this.dataGridView1.TabIndex = 0;
+            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.Image = global::ProjetoFinal.Properties.Resources.b_print;
+            this.btnImprimir.Location = new System.Drawing.Point(618, 187);
+            this.btnImprimir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(127, 37);
+            this.btnImprimir.TabIndex = 36;
+            this.btnImprimir.Text = "Imprimir Dados";
+            this.btnImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnImprimir.UseVisualStyleBackColor = true;
             // 
-            // btnVisualizar
+            // textBox2
             // 
-            this.btnVisualizar.Image = global::ProjetoFinal.Properties.Resources.b_view;
-            this.btnVisualizar.Location = new System.Drawing.Point(511, 292);
-            this.btnVisualizar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnVisualizar.Name = "btnVisualizar";
-            this.btnVisualizar.Size = new System.Drawing.Size(234, 35);
-            this.btnVisualizar.TabIndex = 4;
-            this.btnVisualizar.Text = "Visualizar Paciente Selecionado";
-            this.btnVisualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVisualizar.UseVisualStyleBackColor = true;
+            this.textBox2.Enabled = false;
+            this.textBox2.Location = new System.Drawing.Point(275, 202);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(81, 22);
+            this.textBox2.TabIndex = 35;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(275, 162);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(81, 22);
+            this.textBox1.TabIndex = 34;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Enabled = false;
+            this.txtEmail.Location = new System.Drawing.Point(102, 123);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(643, 22);
+            this.txtEmail.TabIndex = 33;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(39, 129);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 16);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "Email:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(39, 205);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(230, 16);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "Total Registos de Crise Preenchidos:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(39, 168);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(223, 16);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "Total Registos Diários Preenchidos:";
             // 
             // dateTimePicker1
             // 
@@ -187,70 +251,6 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "Nome:";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 168);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(223, 16);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "Total Registos Diários Preenchidos:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(39, 205);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(230, 16);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "Total Registos de Crise Preenchidos:";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Enabled = false;
-            this.txtEmail.Location = new System.Drawing.Point(102, 123);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(643, 22);
-            this.txtEmail.TabIndex = 33;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 129);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
-            this.label4.TabIndex = 32;
-            this.label4.Text = "Email:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(275, 162);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(81, 22);
-            this.textBox1.TabIndex = 34;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(275, 202);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(81, 22);
-            this.textBox2.TabIndex = 35;
-            // 
-            // btnImprimir
-            // 
-            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimir.Image = global::ProjetoFinal.Properties.Resources.b_print;
-            this.btnImprimir.Location = new System.Drawing.Point(618, 187);
-            this.btnImprimir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(127, 37);
-            this.btnImprimir.TabIndex = 36;
-            this.btnImprimir.Text = "Imprimir Dados";
-            this.btnImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            // 
             // InformacaoPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -260,13 +260,14 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "InformacaoPacientes";
             this.Text = "InformacaoPacientes";
+            this.Load += new System.EventHandler(this.InformacaoPacientes_Load);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

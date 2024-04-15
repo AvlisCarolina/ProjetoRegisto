@@ -10,14 +10,16 @@ namespace ProjetoFinal
 {
     internal class Connections
     {
+        private SQLiteConnection lastConnection;
         public SQLiteConnection OpenConnection()
         {
-            var connection = new SQLiteConnection(DatabaseHelper.connectionString);
+            lastConnection?.Close();
+            lastConnection = new SQLiteConnection(DatabaseHelper.connectionString);
             // Método responsável por abrir a conexão com o banco de dados.
             try
             {
-                connection.Open();
-                return connection;
+                lastConnection.Open();
+                return lastConnection;
             }
             catch (SQLiteException ex)
             {
@@ -26,19 +28,17 @@ namespace ProjetoFinal
             }
         }
 
-        public SQLiteConnection CloseConnection()
+        public void CloseConnection()
         {
-            var connection = new SQLiteConnection(DatabaseHelper.connectionString);
+            
             // Método responsável por abrir a conexão com o banco de dados.
             try
             {
-                connection.Close();
-                return connection;
+                lastConnection.Close();
             }
             catch (SQLiteException ex)
             {
                 MessageBox.Show(ex.Message);
-                return connection;
             }
         }
 

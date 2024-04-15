@@ -16,5 +16,10 @@ namespace ProjetoFinal
         {
             InitializeComponent();
         }
+
+        private void InformacaoPacientes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

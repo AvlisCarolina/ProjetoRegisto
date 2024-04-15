@@ -94,8 +94,10 @@ namespace ProjetoFinal
                 {
                     MessageBox.Show("O email ou userName indicados já se encontram registados no sistema. Insira outros dados.");
                     txtEmail.Focus();
+                    ligacao.CloseConnection();
                     return false;
                 }
+                ligacao.CloseConnection();
                 return true;
             }
         }

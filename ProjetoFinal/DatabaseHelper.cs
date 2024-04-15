@@ -86,15 +86,29 @@ public class DatabaseHelper
                         nivelDepressao INTEGER NOT NULL,
                         descricaoSituacao TEXT,
                         pensamentosImagens TEXT,
-                        idSensacao INTEGER,
-                        idSentimento INTEGER,
                         idPaciente INTEGER NOT NULL,
-                        CONSTRAINT fk_sensacoes
-                            FOREIGN KEY (idSensacao) REFERENCES sensacoes(idSensacao),
-                        CONSTRAINT fk_sentimentos
-                            FOREIGN KEY (idSentimento) REFERENCES sentimentos(idSentimento),
                         CONSTRAINT fk_pacientes
                             FOREIGN KEY (idPaciente) REFERENCES pacientes(idPaciente)
+                        );";
+
+                string createCriseSencesListTableQuery = @"
+                    CREATE TABLE IF NOT EXISTS criseListaSensacoes (
+                        idCrise INTEGER NOT NULL,
+                        idSensacao INTEGER NOT NULL,
+                        CONSTRAINT fk_idCrise
+                           FOREIGN KEY (idCrise) REFERENCES crises(idCrise),
+                        CONSTRAINT fk_idSensacao
+                           FOREIGN KEY (idSensacao) REFERENCES sensacoes(idSensacao)
+                        );";
+
+                string createCriseFelingsListTableQuery = @"
+                    CREATE TABLE IF NOT EXISTS criseListaSentimentos (
+                        idCrise INTEGER NOT NULL,
+                        idSentimento INTEGER NOT NULL,
+                        CONSTRAINT fk_idCrise
+                           FOREIGN KEY (idCrise) REFERENCES crises(idCrise),
+                        CONSTRAINT fk_idSentimento
+                           FOREIGN KEY (idSentimento) REFERENCES sentimentos(idSentimento)
                         );";
 
                 string createDiaryTableQuery = @"
@@ -107,17 +121,31 @@ public class DatabaseHelper
                         convivioSocial TEXT NOT NULL,
                         detalhes TEXT,
                         idCrise INTEGER,
-                        idSensacao INTEGER,
-                        idSentimento INTEGER,
                         idPaciente INTEGER NOT NULL,
                         CONSTRAINT fk_crises
                             FOREIGN KEY (idCrise) REFERENCES crises(idCrise),
-                        CONSTRAINT fk_sensacoes
-                            FOREIGN KEY (idSensacao) REFERENCES sensacoes(idSensacao),
-                        CONSTRAINT fk_sentimentos
-                            FOREIGN KEY (idSentimento) REFERENCES sentimentos(idSentimento),
                         CONSTRAINT fk_pacientes
                             FOREIGN KEY (idPaciente) REFERENCES pacientes(idPaciente)
+                        );";
+
+                string createDiarioSencesListTableQuery = @"
+                    CREATE TABLE IF NOT EXISTS DiarioListaSensacoes (
+                        idDiario INTEGER NOT NULL,
+                        idSensacao INTEGER NOT NULL,
+                        CONSTRAINT fk_idDiario
+                           FOREIGN KEY (idDiario) REFERENCES diario(idDiario),
+                        CONSTRAINT fk_idSensacao
+                           FOREIGN KEY (idSensacao) REFERENCES sensacoes(idSensacao)
+                        );";
+
+                string createDiarioFelingsListTableQuery = @"
+                    CREATE TABLE IF NOT EXISTS DiarioListaSentimentos (
+                        idDiario INTEGER NOT NULL,
+                        idSentimento INTEGER NOT NULL,
+                        CONSTRAINT fk_idDiario
+                           FOREIGN KEY (idDiario) REFERENCES diario(idDiario),
+                        CONSTRAINT fk_idSentimento
+                           FOREIGN KEY (idSentimento) REFERENCES sentimentos(idSentimento)
                         );";
 
                 string insertSensesDataQuery = @"
@@ -208,8 +236,6 @@ public class DatabaseHelper
                         ('Tolerância'),
                         ('Intolerância');";
 
-                
-
                 string insertRolesDataQuery = @"
                     INSERT INTO acessos (nivelAcesso) VALUES 
                         ('Administrador'),
@@ -217,11 +243,19 @@ public class DatabaseHelper
                         ('Paciente');";
                 
                 // Data inputs for inicial tests
-                /*string insertUsersDataQuery = @"
+                string insertUsersDataQuery = @"
                     INSERT INTO utilizadores (email,userName,password,idAcesso) VALUES
-                        ('ana_silva@admin.pt', 'ASilva', '1234', 1),
-                        ('matt_al@terapia.pt', 'Matt', '4321', 2),
-                        ('mari_alice@gmail.pt', 'MAlice', '1111', 3);";*/
+                        ('ana_silva@admin.pt', 'AdministradorTeste', '1234', 1),
+                        ('matt_al@terapia.pt', 'Terapeuta1', '4321', 2),
+                        ('mari_alice@gmail.pt', 'Paciente1', '1111', 3);";
+
+                string insertTerapeutaDataQuery = @"
+                    INSERT INTO terapeutas (nome, telefone, especializacao, apresentacao, idUtilizador) VALUES
+                        ('Mattheus Silva', '962333444', 'Psicologia Clínica', 'Terapeuta de renome.', '2');";
+
+                string insertPacienteDataQuery = @"
+                    INSERT INTO pacientes (nome, genero, dataNascimento, telefone, idUtilizador, idTerapeuta) VALUES
+                        ('Maria Alice', 'Feminino', '01/01/2001', '916542333', '3','1');";
 
 
 
@@ -250,7 +284,19 @@ public class DatabaseHelper
                     command.CommandText = createCriseTableQuery;
                     command.ExecuteNonQuery();
 
+                    command.CommandText = createCriseFelingsListTableQuery;
+                    command.ExecuteNonQuery();
+
+                    command.CommandText = createCriseSencesListTableQuery;
+                    command.ExecuteNonQuery();
+
                     command.CommandText = createDiaryTableQuery;
+                    command.ExecuteNonQuery();
+
+                    command.CommandText = createDiarioFelingsListTableQuery;
+                    command.ExecuteNonQuery();
+
+                    command.CommandText = createDiarioSencesListTableQuery;
                     command.ExecuteNonQuery();
 
                     //Insert Data commands
@@ -264,8 +310,14 @@ public class DatabaseHelper
                     command.ExecuteNonQuery();
                     
                     //Insert query for test
-                    /*command.CommandText = insertUsersDataQuery;
-                    command.ExecuteNonQuery();*/
+                    command.CommandText = insertUsersDataQuery;
+                    command.ExecuteNonQuery();
+
+                    command.CommandText = insertTerapeutaDataQuery;
+                    command.ExecuteNonQuery();
+
+                    command.CommandText = insertPacienteDataQuery;
+                    command.ExecuteNonQuery();
                 }
             }
         }

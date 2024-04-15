@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ProjetoFinal",
+    "\\ProjetoFinal\\Files"
   ],
-  "SelectedNode": "\\ProjetoFinal.sln",
+  "SelectedNode": "\\ProjetoFinal\\Files\\psicoproject.db",
   "PreviewInSolutionExplorer": false
 }
