@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -44,7 +45,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -66,10 +67,20 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(6, 3, 6, 3);
-            this.groupBox2.Size = new System.Drawing.Size(765, 526);
+            this.groupBox2.Size = new System.Drawing.Size(765, 508);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Outros Terapeutas";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(565, 463);
+            this.button1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 29);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Fazer Alteração";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -220,21 +231,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome: ";
             // 
-            // button1
+            // btnVoltar
             // 
-            this.button1.Location = new System.Drawing.Point(565, 463);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 29);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Fazer Alteração";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(324, 723);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(148, 37);
+            this.btnVoltar.TabIndex = 7;
+            this.btnVoltar.Text = "Voltar ao Início";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // MudarTerapeuta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 741);
+            this.ClientSize = new System.Drawing.Size(800, 794);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -269,5 +282,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

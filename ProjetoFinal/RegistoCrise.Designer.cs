@@ -48,11 +48,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnVoltar);
             this.groupBox1.Controls.Add(this.clbSensacoes);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.rtxtSituacao);
@@ -94,7 +96,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(298, 1021);
+            this.button1.Location = new System.Drawing.Point(187, 1020);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 34);
             this.button1.TabIndex = 18;
@@ -224,15 +226,15 @@
             "Entre 1 a 2 horas",
             "Entre 2 a 4 horas",
             "Mais de 5 horas"});
-            this.cbDuracao.Location = new System.Drawing.Point(534, 44);
+            this.cbDuracao.Location = new System.Drawing.Point(463, 44);
             this.cbDuracao.Name = "cbDuracao";
-            this.cbDuracao.Size = new System.Drawing.Size(209, 23);
+            this.cbDuracao.Size = new System.Drawing.Size(280, 23);
             this.cbDuracao.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(424, 49);
+            this.label3.Location = new System.Drawing.Point(353, 49);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 15);
             this.label3.TabIndex = 4;
@@ -240,7 +242,7 @@
             // 
             // mtxtHora
             // 
-            this.mtxtHora.Location = new System.Drawing.Point(350, 44);
+            this.mtxtHora.Location = new System.Drawing.Point(279, 44);
             this.mtxtHora.Mask = "00:00";
             this.mtxtHora.Name = "mtxtHora";
             this.mtxtHora.Size = new System.Drawing.Size(45, 21);
@@ -250,7 +252,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(307, 50);
+            this.label2.Location = new System.Drawing.Point(236, 47);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 15);
             this.label2.TabIndex = 2;
@@ -267,9 +269,11 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(75, 45);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 21);
+            this.dateTimePicker1.Size = new System.Drawing.Size(120, 21);
             this.dateTimePicker1.TabIndex = 0;
             // 
             // label9
@@ -281,6 +285,16 @@
             this.label9.Text = "Se possível, descreva a situação em que se encontrava quando começou a crise, men" +
     "cionando o que pode ter despoletado a mesma e quais foram as suas as ferramentas" +
     " para tentar gerir a situação.";
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Location = new System.Drawing.Point(447, 1020);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(147, 34);
+            this.btnVoltar.TabIndex = 20;
+            this.btnVoltar.Text = "Voltar ao início";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // RegistoCrise
             // 
@@ -320,5 +334,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckedListBox clbSensacoes;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

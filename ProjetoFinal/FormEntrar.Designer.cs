@@ -43,7 +43,7 @@
             this.button1.Location = new System.Drawing.Point(204, 160);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 24);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Entrar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -64,7 +64,7 @@
             this.txtUserName.Location = new System.Drawing.Point(177, 46);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(322, 22);
-            this.txtUserName.TabIndex = 2;
+            this.txtUserName.TabIndex = 1;
             // 
             // groupBox1
             // 
@@ -89,7 +89,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(217, 199);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(88, 21);
-            this.btnVoltar.TabIndex = 5;
+            this.btnVoltar.TabIndex = 4;
             this.btnVoltar.Text = "Voltar ao Início";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -100,7 +100,7 @@
             this.txtPass.Location = new System.Drawing.Point(177, 89);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(322, 22);
-            this.txtPass.TabIndex = 4;
+            this.txtPass.TabIndex = 2;
             this.txtPass.UseSystemPasswordChar = true;
             // 
             // label2

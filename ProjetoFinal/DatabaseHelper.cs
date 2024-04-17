@@ -120,10 +120,8 @@ public class DatabaseHelper
                         atividadeFisica TEXT NOT NULL,
                         convivioSocial TEXT NOT NULL,
                         detalhes TEXT,
-                        idCrise INTEGER,
+                        crise TEXT,
                         idPaciente INTEGER NOT NULL,
-                        CONSTRAINT fk_crises
-                            FOREIGN KEY (idCrise) REFERENCES crises(idCrise),
                         CONSTRAINT fk_pacientes
                             FOREIGN KEY (idPaciente) REFERENCES pacientes(idPaciente)
                         );";

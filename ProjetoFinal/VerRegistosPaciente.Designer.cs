@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.dtpFim = new System.Windows.Forms.DateTimePicker();
             this.dtpInicio = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,20 +41,26 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnVisualizar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.mtxtHora = new System.Windows.Forms.MaskedTextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtData = new System.Windows.Forms.TextBox();
+            this.txtDuracao = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.rtxtDetalhes = new System.Windows.Forms.RichTextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.rtxtSentimentos = new System.Windows.Forms.RichTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtIDRegisto = new System.Windows.Forms.TextBox();
-            this.rtbSensacoes = new System.Windows.Forms.RichTextBox();
+            this.rtxtSensacoes = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.txtTipoRegisto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtNivelDepressao = new System.Windows.Forms.TextBox();
             this.txtNivelAnsiedade = new System.Windows.Forms.TextBox();
-            this.dtpDataRegisto = new System.Windows.Forms.DateTimePicker();
             this.txtNivelConvivioSocial = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtNivelAtividadeFisica = new System.Windows.Forms.TextBox();
@@ -66,10 +74,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.btnVisualizar = new System.Windows.Forms.Button();
-            this.btnImprimir = new System.Windows.Forms.Button();
-            this.btnPesquisar = new System.Windows.Forms.Button();
-            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -78,6 +83,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnVoltar);
             this.groupBox1.Controls.Add(this.btnPesquisar);
             this.groupBox1.Controls.Add(this.btnLimpar);
             this.groupBox1.Controls.Add(this.dtpFim);
@@ -93,31 +99,63 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Size = new System.Drawing.Size(773, 151);
+            this.groupBox1.Size = new System.Drawing.Size(773, 124);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pesquisar Registos";
             // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.Image = global::ProjetoFinal.Properties.Resources.b_search1;
+            this.btnPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPesquisar.Location = new System.Drawing.Point(452, 75);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(142, 35);
+            this.btnPesquisar.TabIndex = 9;
+            this.btnPesquisar.Text = "Pesquisar Registos";
+            this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Image = global::ProjetoFinal.Properties.Resources.b_drop;
+            this.btnLimpar.Location = new System.Drawing.Point(612, 75);
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(127, 35);
+            this.btnLimpar.TabIndex = 5;
+            this.btnLimpar.Text = "Limpar Pesquisa";
+            this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // dtpFim
             // 
-            this.dtpFim.Location = new System.Drawing.Point(129, 114);
+            this.dtpFim.CustomFormat = "yyyy-MM-dd";
+            this.dtpFim.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFim.Location = new System.Drawing.Point(332, 30);
             this.dtpFim.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpFim.Name = "dtpFim";
-            this.dtpFim.Size = new System.Drawing.Size(233, 21);
+            this.dtpFim.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dtpFim.Size = new System.Drawing.Size(108, 21);
             this.dtpFim.TabIndex = 8;
             // 
             // dtpInicio
             // 
-            this.dtpInicio.Location = new System.Drawing.Point(129, 75);
+            this.dtpInicio.CustomFormat = "yyyy-MM-dd";
+            this.dtpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpInicio.Location = new System.Drawing.Point(124, 30);
             this.dtpInicio.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpInicio.Name = "dtpInicio";
-            this.dtpInicio.Size = new System.Drawing.Size(233, 21);
+            this.dtpInicio.Size = new System.Drawing.Size(108, 21);
             this.dtpInicio.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(47, 114);
+            this.label3.Location = new System.Drawing.Point(250, 30);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 15);
@@ -127,7 +165,7 @@
             // rbTodos
             // 
             this.rbTodos.AutoSize = true;
-            this.rbTodos.Location = new System.Drawing.Point(273, 36);
+            this.rbTodos.Location = new System.Drawing.Point(276, 66);
             this.rbTodos.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rbTodos.Name = "rbTodos";
             this.rbTodos.Size = new System.Drawing.Size(59, 19);
@@ -139,7 +177,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 75);
+            this.label2.Location = new System.Drawing.Point(28, 30);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 15);
@@ -149,7 +187,7 @@
             // rbDiario
             // 
             this.rbDiario.AutoSize = true;
-            this.rbDiario.Location = new System.Drawing.Point(198, 36);
+            this.rbDiario.Location = new System.Drawing.Point(201, 66);
             this.rbDiario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rbDiario.Name = "rbDiario";
             this.rbDiario.Size = new System.Drawing.Size(58, 19);
@@ -161,7 +199,7 @@
             // rbCrise
             // 
             this.rbCrise.AutoSize = true;
-            this.rbCrise.Location = new System.Drawing.Point(129, 36);
+            this.rbCrise.Location = new System.Drawing.Point(132, 66);
             this.rbCrise.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rbCrise.Name = "rbCrise";
             this.rbCrise.Size = new System.Drawing.Size(53, 19);
@@ -173,7 +211,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 36);
+            this.label1.Location = new System.Drawing.Point(31, 66);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 15);
@@ -184,7 +222,7 @@
             // 
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Controls.Add(this.btnVisualizar);
-            this.groupBox2.Location = new System.Drawing.Point(14, 166);
+            this.groupBox2.Location = new System.Drawing.Point(14, 139);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -195,29 +233,49 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(32, 22);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(708, 163);
             this.dataGridView1.TabIndex = 0;
             // 
+            // btnVisualizar
+            // 
+            this.btnVisualizar.Image = global::ProjetoFinal.Properties.Resources.b_view;
+            this.btnVisualizar.Location = new System.Drawing.Point(532, 194);
+            this.btnVisualizar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnVisualizar.Name = "btnVisualizar";
+            this.btnVisualizar.Size = new System.Drawing.Size(208, 35);
+            this.btnVisualizar.TabIndex = 3;
+            this.btnVisualizar.Text = "Visualizar Registo Selecionado";
+            this.btnVisualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVisualizar.UseVisualStyleBackColor = true;
+            this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
+            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.richTextBox2);
+            this.groupBox3.Controls.Add(this.mtxtHora);
+            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.txtData);
+            this.groupBox3.Controls.Add(this.txtDuracao);
+            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Controls.Add(this.rtxtDetalhes);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.btnImprimir);
-            this.groupBox3.Controls.Add(this.richTextBox1);
+            this.groupBox3.Controls.Add(this.rtxtSentimentos);
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.txtIDRegisto);
-            this.groupBox3.Controls.Add(this.rtbSensacoes);
+            this.groupBox3.Controls.Add(this.rtxtSensacoes);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.txtTipoRegisto);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.txtNivelDepressao);
             this.groupBox3.Controls.Add(this.txtNivelAnsiedade);
-            this.groupBox3.Controls.Add(this.dtpDataRegisto);
             this.groupBox3.Controls.Add(this.txtNivelConvivioSocial);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.txtNivelAtividadeFisica);
@@ -231,25 +289,70 @@
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Location = new System.Drawing.Point(13, 407);
+            this.groupBox3.Location = new System.Drawing.Point(13, 380);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox3.Size = new System.Drawing.Size(773, 642);
+            this.groupBox3.Size = new System.Drawing.Size(773, 659);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Dados Registo";
             // 
-            // richTextBox2
+            // mtxtHora
             // 
-            this.richTextBox2.Enabled = false;
-            this.richTextBox2.Location = new System.Drawing.Point(41, 520);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBox2.Size = new System.Drawing.Size(695, 116);
-            this.richTextBox2.TabIndex = 23;
-            this.richTextBox2.Text = "";
+            this.mtxtHora.Location = new System.Drawing.Point(292, 142);
+            this.mtxtHora.Mask = "00:00";
+            this.mtxtHora.Name = "mtxtHora";
+            this.mtxtHora.Size = new System.Drawing.Size(45, 21);
+            this.mtxtHora.TabIndex = 28;
+            this.mtxtHora.ValidatingType = typeof(System.DateTime);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(249, 145);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(37, 15);
+            this.label18.TabIndex = 27;
+            this.label18.Text = "Hora:";
+            // 
+            // txtData
+            // 
+            this.txtData.Enabled = false;
+            this.txtData.Location = new System.Drawing.Point(121, 142);
+            this.txtData.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(104, 21);
+            this.txtData.TabIndex = 26;
+            // 
+            // txtDuracao
+            // 
+            this.txtDuracao.Enabled = false;
+            this.txtDuracao.Location = new System.Drawing.Point(507, 99);
+            this.txtDuracao.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtDuracao.Name = "txtDuracao";
+            this.txtDuracao.Size = new System.Drawing.Size(203, 21);
+            this.txtDuracao.TabIndex = 25;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(397, 101);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(103, 15);
+            this.label17.TabIndex = 24;
+            this.label17.Text = "Duração da crise:";
+            // 
+            // rtxtDetalhes
+            // 
+            this.rtxtDetalhes.Enabled = false;
+            this.rtxtDetalhes.Location = new System.Drawing.Point(41, 520);
+            this.rtxtDetalhes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.rtxtDetalhes.Name = "rtxtDetalhes";
+            this.rtxtDetalhes.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.rtxtDetalhes.Size = new System.Drawing.Size(695, 116);
+            this.rtxtDetalhes.TabIndex = 23;
+            this.rtxtDetalhes.Text = "";
             // 
             // label16
             // 
@@ -261,16 +364,29 @@
             this.label16.TabIndex = 22;
             this.label16.Text = "Outras Informações";
             // 
-            // richTextBox1
+            // btnImprimir
             // 
-            this.richTextBox1.Enabled = false;
-            this.richTextBox1.Location = new System.Drawing.Point(41, 403);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBox1.Size = new System.Drawing.Size(695, 86);
-            this.richTextBox1.TabIndex = 21;
-            this.richTextBox1.Text = "";
+            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.Image = global::ProjetoFinal.Properties.Resources.b_print;
+            this.btnImprimir.Location = new System.Drawing.Point(609, 30);
+            this.btnImprimir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(127, 37);
+            this.btnImprimir.TabIndex = 4;
+            this.btnImprimir.Text = "Imprimir Registo";
+            this.btnImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            // 
+            // rtxtSentimentos
+            // 
+            this.rtxtSentimentos.Enabled = false;
+            this.rtxtSentimentos.Location = new System.Drawing.Point(41, 403);
+            this.rtxtSentimentos.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.rtxtSentimentos.Name = "rtxtSentimentos";
+            this.rtxtSentimentos.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.rtxtSentimentos.Size = new System.Drawing.Size(695, 86);
+            this.rtxtSentimentos.TabIndex = 21;
+            this.rtxtSentimentos.Text = "";
             // 
             // label15
             // 
@@ -288,19 +404,19 @@
             this.txtIDRegisto.Location = new System.Drawing.Point(123, 96);
             this.txtIDRegisto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtIDRegisto.Name = "txtIDRegisto";
-            this.txtIDRegisto.Size = new System.Drawing.Size(116, 21);
+            this.txtIDRegisto.Size = new System.Drawing.Size(64, 21);
             this.txtIDRegisto.TabIndex = 1;
             // 
-            // rtbSensacoes
+            // rtxtSensacoes
             // 
-            this.rtbSensacoes.Enabled = false;
-            this.rtbSensacoes.Location = new System.Drawing.Point(41, 285);
-            this.rtbSensacoes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rtbSensacoes.Name = "rtbSensacoes";
-            this.rtbSensacoes.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.rtbSensacoes.Size = new System.Drawing.Size(695, 86);
-            this.rtbSensacoes.TabIndex = 19;
-            this.rtbSensacoes.Text = "";
+            this.rtxtSensacoes.Enabled = false;
+            this.rtxtSensacoes.Location = new System.Drawing.Point(41, 285);
+            this.rtxtSensacoes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.rtxtSensacoes.Name = "rtxtSensacoes";
+            this.rtxtSensacoes.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.rtxtSensacoes.Size = new System.Drawing.Size(695, 86);
+            this.rtxtSensacoes.TabIndex = 19;
+            this.rtxtSensacoes.Text = "";
             // 
             // label4
             // 
@@ -325,7 +441,7 @@
             // txtTipoRegisto
             // 
             this.txtTipoRegisto.Enabled = false;
-            this.txtTipoRegisto.Location = new System.Drawing.Point(350, 96);
+            this.txtTipoRegisto.Location = new System.Drawing.Point(282, 98);
             this.txtTipoRegisto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTipoRegisto.Name = "txtTipoRegisto";
             this.txtTipoRegisto.Size = new System.Drawing.Size(100, 21);
@@ -334,7 +450,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(268, 99);
+            this.label6.Location = new System.Drawing.Point(200, 101);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 15);
@@ -358,15 +474,6 @@
             this.txtNivelAnsiedade.Name = "txtNivelAnsiedade";
             this.txtNivelAnsiedade.Size = new System.Drawing.Size(100, 21);
             this.txtNivelAnsiedade.TabIndex = 16;
-            // 
-            // dtpDataRegisto
-            // 
-            this.dtpDataRegisto.Enabled = false;
-            this.dtpDataRegisto.Location = new System.Drawing.Point(123, 141);
-            this.dtpDataRegisto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.dtpDataRegisto.Name = "dtpDataRegisto";
-            this.dtpDataRegisto.Size = new System.Drawing.Size(233, 21);
-            this.dtpDataRegisto.TabIndex = 11;
             // 
             // txtNivelConvivioSocial
             // 
@@ -493,55 +600,15 @@
             this.label11.TabIndex = 6;
             this.label11.Text = "Convívio Social:";
             // 
-            // btnVisualizar
+            // btnVoltar
             // 
-            this.btnVisualizar.Image = global::ProjetoFinal.Properties.Resources.b_view;
-            this.btnVisualizar.Location = new System.Drawing.Point(532, 194);
-            this.btnVisualizar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnVisualizar.Name = "btnVisualizar";
-            this.btnVisualizar.Size = new System.Drawing.Size(208, 35);
-            this.btnVisualizar.TabIndex = 3;
-            this.btnVisualizar.Text = "Visualizar Registo Selecionado";
-            this.btnVisualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVisualizar.UseVisualStyleBackColor = true;
-            // 
-            // btnImprimir
-            // 
-            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimir.Image = global::ProjetoFinal.Properties.Resources.b_print;
-            this.btnImprimir.Location = new System.Drawing.Point(609, 88);
-            this.btnImprimir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(127, 37);
-            this.btnImprimir.TabIndex = 4;
-            this.btnImprimir.Text = "Imprimir Registo";
-            this.btnImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            // 
-            // btnPesquisar
-            // 
-            this.btnPesquisar.Image = global::ProjetoFinal.Properties.Resources.b_search1;
-            this.btnPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPesquisar.Location = new System.Drawing.Point(454, 70);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(142, 35);
-            this.btnPesquisar.TabIndex = 9;
-            this.btnPesquisar.Text = "Pesquisar Registos";
-            this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPesquisar.UseVisualStyleBackColor = true;
-            // 
-            // btnLimpar
-            // 
-            this.btnLimpar.Image = global::ProjetoFinal.Properties.Resources.b_drop;
-            this.btnLimpar.Location = new System.Drawing.Point(609, 70);
-            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(127, 35);
-            this.btnLimpar.TabIndex = 5;
-            this.btnLimpar.Text = "Limpar Pesquisa";
-            this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Location = new System.Drawing.Point(617, 17);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(122, 28);
+            this.btnVoltar.TabIndex = 31;
+            this.btnVoltar.Text = "Fechar Pesquisa";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // VerRegistosPaciente
             // 
@@ -556,6 +623,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "VerRegistosPaciente";
             this.Text = "VerRegistosPaciente";
+            this.Load += new System.EventHandler(this.VerRegistosPaciente_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -586,7 +654,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
@@ -597,18 +664,24 @@
         private System.Windows.Forms.TextBox txtNivelAtividadeFisica;
         private System.Windows.Forms.TextBox txtNivelAlimentacao;
         private System.Windows.Forms.TextBox txtNivelSono;
-        private System.Windows.Forms.DateTimePicker dtpDataRegisto;
-        private System.Windows.Forms.TextBox txtTipoRegisto;
         private System.Windows.Forms.TextBox txtNomePaciente;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtxtSentimentos;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.RichTextBox rtbSensacoes;
+        private System.Windows.Forms.RichTextBox rtxtSensacoes;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnVisualizar;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox rtxtDetalhes;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.TextBox txtData;
+        private System.Windows.Forms.TextBox txtDuracao;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtTipoRegisto;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.MaskedTextBox mtxtHora;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

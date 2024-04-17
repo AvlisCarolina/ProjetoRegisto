@@ -259,6 +259,19 @@ namespace ProjetoFinal
             terminarSessãoToolStripMenuItem.Visible = false;
             pacienteToolStripMenuItem.Visible = false;
             terapeutaToolStripMenuItem.Visible = false;
+
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
+        }
+
+        private void reiniciarAppToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void fecharAppToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
