@@ -40,6 +40,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.cbTerapeuta = new System.Windows.Forms.ComboBox();
             this.txtEspecialidade1 = new System.Windows.Forms.TextBox();
             this.txtContacto1 = new System.Windows.Forms.TextBox();
@@ -51,7 +52,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -185,6 +185,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Outros terapeutas";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(580, 409);
+            this.button1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 29);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Fazer Alteração";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // cbTerapeuta
             // 
             this.cbTerapeuta.FormattingEnabled = true;
@@ -282,16 +293,6 @@
             this.btnVoltar.Text = "Voltar ao Início";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(580, 409);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 29);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Fazer Alteração";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // informacaoTerapeuta
             // 

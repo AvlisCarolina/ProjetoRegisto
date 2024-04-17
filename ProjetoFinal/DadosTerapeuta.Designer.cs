@@ -30,8 +30,8 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.bntAtualizar = new System.Windows.Forms.Button();
+            this.rtxtApresentacao = new System.Windows.Forms.RichTextBox();
+            this.btnAtualizarDadosPessoais = new System.Windows.Forms.Button();
             this.mtbContacto = new System.Windows.Forms.MaskedTextBox();
             this.cbEspecialidade = new System.Windows.Forms.ComboBox();
             this.txtNomeTerapeuta = new System.Windows.Forms.TextBox();
@@ -39,13 +39,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAtualizarDadosConta = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -54,8 +55,8 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.richTextBox1);
-            this.groupBox1.Controls.Add(this.bntAtualizar);
+            this.groupBox1.Controls.Add(this.rtxtApresentacao);
+            this.groupBox1.Controls.Add(this.btnAtualizarDadosPessoais);
             this.groupBox1.Controls.Add(this.mtbContacto);
             this.groupBox1.Controls.Add(this.cbEspecialidade);
             this.groupBox1.Controls.Add(this.txtNomeTerapeuta);
@@ -79,22 +80,23 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "Breve apresentação";
             // 
-            // richTextBox1
+            // rtxtApresentacao
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(35, 209);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(455, 148);
-            this.richTextBox1.TabIndex = 19;
-            this.richTextBox1.Text = "";
+            this.rtxtApresentacao.Location = new System.Drawing.Point(49, 208);
+            this.rtxtApresentacao.Name = "rtxtApresentacao";
+            this.rtxtApresentacao.Size = new System.Drawing.Size(455, 148);
+            this.rtxtApresentacao.TabIndex = 19;
+            this.rtxtApresentacao.Text = "";
             // 
-            // bntAtualizar
+            // btnAtualizarDadosPessoais
             // 
-            this.bntAtualizar.Location = new System.Drawing.Point(187, 390);
-            this.bntAtualizar.Name = "bntAtualizar";
-            this.bntAtualizar.Size = new System.Drawing.Size(177, 32);
-            this.bntAtualizar.TabIndex = 18;
-            this.bntAtualizar.Text = "Atualizar Dados Pessoais";
-            this.bntAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizarDadosPessoais.Location = new System.Drawing.Point(187, 390);
+            this.btnAtualizarDadosPessoais.Name = "btnAtualizarDadosPessoais";
+            this.btnAtualizarDadosPessoais.Size = new System.Drawing.Size(177, 32);
+            this.btnAtualizarDadosPessoais.TabIndex = 18;
+            this.btnAtualizarDadosPessoais.Text = "Atualizar Dados Pessoais";
+            this.btnAtualizarDadosPessoais.UseVisualStyleBackColor = true;
+            this.btnAtualizarDadosPessoais.Click += new System.EventHandler(this.btnAtualizarDadosPessoais_Click);
             // 
             // mtbContacto
             // 
@@ -112,7 +114,7 @@
             "Psicologia Comportamental",
             "Psicologia Clínica",
             "Psicoterapia",
-            "Psicologia cognitiva",
+            "Psicologia Cognitiva",
             "Psicologia Educacional",
             "Psicologia Industrial-Organizacional",
             "Psicologia Social",
@@ -159,7 +161,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btnAtualizarDadosConta);
             this.groupBox2.Controls.Add(this.txtPassword);
             this.groupBox2.Controls.Add(this.txtUserName);
             this.groupBox2.Controls.Add(this.txtEmail);
@@ -174,17 +176,18 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados Conta";
             // 
-            // button1
+            // btnAtualizarDadosConta
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnAtualizarDadosConta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(189, 196);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 33);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Atualizar Dados Conta";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAtualizarDadosConta.Location = new System.Drawing.Point(189, 196);
+            this.btnAtualizarDadosConta.Name = "btnAtualizarDadosConta";
+            this.btnAtualizarDadosConta.Size = new System.Drawing.Size(175, 33);
+            this.btnAtualizarDadosConta.TabIndex = 21;
+            this.btnAtualizarDadosConta.Text = "Atualizar Dados Conta";
+            this.btnAtualizarDadosConta.UseVisualStyleBackColor = true;
+            this.btnAtualizarDadosConta.Click += new System.EventHandler(this.btnAtualizarDadosConta_Click);
             // 
             // txtPassword
             // 
@@ -234,16 +237,29 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Email:";
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(332, 749);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(139, 34);
+            this.btnVoltar.TabIndex = 22;
+            this.btnVoltar.Text = "Voltar ao Início";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // DadosTerapeuta
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(800, 749);
+            this.ClientSize = new System.Drawing.Size(800, 805);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DadosTerapeuta";
             this.Text = "DadosTerapeuta";
+            this.Load += new System.EventHandler(this.DadosTerapeuta_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -261,9 +277,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button bntAtualizar;
+        private System.Windows.Forms.Button btnAtualizarDadosPessoais;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAtualizarDadosConta;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtEmail;
@@ -271,6 +287,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtxtApresentacao;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

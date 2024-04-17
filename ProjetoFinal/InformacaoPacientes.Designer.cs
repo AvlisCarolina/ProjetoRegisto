@@ -39,15 +39,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.mtbContacto = new System.Windows.Forms.MaskedTextBox();
-            this.cbGenero = new System.Windows.Forms.ComboBox();
             this.txtNomePaciente = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.txtData = new System.Windows.Forms.TextBox();
+            this.txtGenero = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -77,17 +77,22 @@
             this.btnVisualizar.Text = "Visualizar Paciente Selecionado";
             this.btnVisualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVisualizar.UseVisualStyleBackColor = true;
+            this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(27, 37);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(718, 238);
             this.dataGridView1.TabIndex = 0;
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtGenero);
+            this.groupBox2.Controls.Add(this.txtData);
             this.groupBox2.Controls.Add(this.btnImprimir);
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.textBox1);
@@ -95,10 +100,8 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.mtbContacto);
-            this.groupBox2.Controls.Add(this.cbGenero);
             this.groupBox2.Controls.Add(this.txtNomePaciente);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
@@ -107,7 +110,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(770, 268);
+            this.groupBox2.Size = new System.Drawing.Size(770, 246);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados Paciente";
@@ -116,7 +119,7 @@
             // 
             this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImprimir.Image = global::ProjetoFinal.Properties.Resources.b_print;
-            this.btnImprimir.Location = new System.Drawing.Point(618, 187);
+            this.btnImprimir.Location = new System.Drawing.Point(618, 157);
             this.btnImprimir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(127, 37);
@@ -176,14 +179,6 @@
             this.label2.TabIndex = 30;
             this.label2.Text = "Total Registos Diários Preenchidos:";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Location = new System.Drawing.Point(549, 77);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(196, 22);
-            this.dateTimePicker1.TabIndex = 29;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -202,20 +197,6 @@
             this.mtbContacto.PromptChar = '0';
             this.mtbContacto.Size = new System.Drawing.Size(77, 22);
             this.mtbContacto.TabIndex = 27;
-            // 
-            // cbGenero
-            // 
-            this.cbGenero.Enabled = false;
-            this.cbGenero.FormattingEnabled = true;
-            this.cbGenero.Items.AddRange(new object[] {
-            "Feminino",
-            "Masculino",
-            "Não Binário",
-            "Outro"});
-            this.cbGenero.Location = new System.Drawing.Point(103, 79);
-            this.cbGenero.Name = "cbGenero";
-            this.cbGenero.Size = new System.Drawing.Size(125, 24);
-            this.cbGenero.TabIndex = 26;
             // 
             // txtNomePaciente
             // 
@@ -255,7 +236,7 @@
             // btnVoltar
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(321, 663);
+            this.btnVoltar.Location = new System.Drawing.Point(331, 624);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(148, 37);
             this.btnVoltar.TabIndex = 7;
@@ -263,11 +244,27 @@
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
+            // txtData
+            // 
+            this.txtData.Enabled = false;
+            this.txtData.Location = new System.Drawing.Point(549, 76);
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(196, 22);
+            this.txtData.TabIndex = 37;
+            // 
+            // txtGenero
+            // 
+            this.txtGenero.Enabled = false;
+            this.txtGenero.Location = new System.Drawing.Point(102, 76);
+            this.txtGenero.Name = "txtGenero";
+            this.txtGenero.Size = new System.Drawing.Size(125, 22);
+            this.txtGenero.TabIndex = 38;
+            // 
             // InformacaoPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 727);
+            this.ClientSize = new System.Drawing.Size(800, 677);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -291,10 +288,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnVisualizar;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.MaskedTextBox mtbContacto;
-        private System.Windows.Forms.ComboBox cbGenero;
         private System.Windows.Forms.TextBox txtNomePaciente;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -307,5 +302,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.TextBox txtGenero;
+        private System.Windows.Forms.TextBox txtData;
     }
 }

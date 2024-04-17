@@ -3,48 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|c:\\users\\ana_s\\desktop\\reposit\u00F3riosgithub\\projetoregisto\\projetofinal\\mudarterapeuta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\mudarterapeuta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\projetofinal\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|c:\\users\\ana_s\\desktop\\reposit\u00F3riosgithub\\projetoregisto\\projetofinal\\informacaoterapeuta.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\informacaoterapeuta.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|c:\\users\\ana_s\\desktop\\reposit\u00F3riosgithub\\projetoregisto\\projetofinal\\informacaoterapeuta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\informacaoterapeuta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|c:\\users\\ana_s\\desktop\\reposit\u00F3riosgithub\\projetoregisto\\projetofinal\\informacaoterapeuta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\informacaoterapeuta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|c:\\users\\ana_s\\desktop\\reposit\u00F3riosgithub\\projetoregisto\\projetofinal\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\projetofinal\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|c:\\users\\ana_s\\desktop\\reposit\u00F3riosgithub\\projetoregisto\\projetofinal\\mudarterapeuta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\mudarterapeuta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|c:\\users\\ana_s\\desktop\\reposit\u00F3riosgithub\\projetoregisto\\projetofinal\\dadospaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\dadospaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|c:\\users\\ana_s\\desktop\\reposit\u00F3riosgithub\\projetoregisto\\projetofinal\\dadospaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\dadospaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|c:\\users\\ana_s\\desktop\\reposit\u00F3riosgithub\\projetoregisto\\projetofinal\\formentrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\formentrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|c:\\users\\ana_s\\desktop\\reposit\u00F3riosgithub\\projetoregisto\\projetofinal\\formentrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\formentrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|c:\\users\\ana_s\\desktop\\reposit\u00F3riosgithub\\projetoregisto\\projetofinal\\registocrise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\registocrise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|c:\\users\\ana_s\\desktop\\reposit\u00F3riosgithub\\projetoregisto\\projetofinal\\informacaopacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\informacaopacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\projetofinal\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\projetofinal\\connections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\connections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\projetofinal\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01DC6284-A02C-4215-960E-18299EFE10D9}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -65,7 +29,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 202,
+          "DockedWidth": 192,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -74,60 +38,35 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:5:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:114192203:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
             }
           ]
         },
         {
-          "DockedWidth": 131,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 141,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "DatabaseHelper.cs",
               "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\DatabaseHelper.cs",
               "RelativeDocumentMoniker": "ProjetoFinal\\DatabaseHelper.cs",
               "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\DatabaseHelper.cs",
               "RelativeToolTip": "ProjetoFinal\\DatabaseHelper.cs",
-              "ViewState": "AQIAAN4AAAAAZmZmZmYSwHYAAAAyAAAA",
+              "ViewState": "AQIAAE4AAAAAZmZmZmYSwHYAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-10T07:41:45.503Z",
               "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "informacaoTerapeuta.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\informacaoTerapeuta.Designer.cs",
-              "RelativeDocumentMoniker": "ProjetoFinal\\informacaoTerapeuta.Designer.cs",
-              "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\informacaoTerapeuta.Designer.cs",
-              "RelativeToolTip": "ProjetoFinal\\informacaoTerapeuta.Designer.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T14:15:05.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MudarTerapeuta.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\MudarTerapeuta.cs",
-              "RelativeDocumentMoniker": "ProjetoFinal\\MudarTerapeuta.cs",
-              "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\MudarTerapeuta.cs [Design]",
-              "RelativeToolTip": "ProjetoFinal\\MudarTerapeuta.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T14:14:46.152Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -144,31 +83,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "informacaoTerapeuta.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\informacaoTerapeuta.cs",
-              "RelativeDocumentMoniker": "ProjetoFinal\\informacaoTerapeuta.cs",
-              "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\informacaoTerapeuta.cs [Design]",
-              "RelativeToolTip": "ProjetoFinal\\informacaoTerapeuta.cs [Design]",
+              "Title": "InformacaoPacientes.cs",
+              "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\InformacaoPacientes.cs",
+              "RelativeDocumentMoniker": "ProjetoFinal\\InformacaoPacientes.cs",
+              "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\InformacaoPacientes.cs",
+              "RelativeToolTip": "ProjetoFinal\\InformacaoPacientes.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAuwBAAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T13:41:34.737Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "informacaoTerapeuta.cs",
-              "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\informacaoTerapeuta.cs",
-              "RelativeDocumentMoniker": "ProjetoFinal\\informacaoTerapeuta.cs",
-              "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\informacaoTerapeuta.cs",
-              "RelativeToolTip": "ProjetoFinal\\informacaoTerapeuta.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAASwGoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T13:25:53.541Z",
+              "WhenOpened": "2024-04-17T17:56:12.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Connections.cs",
+              "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\Connections.cs",
+              "RelativeDocumentMoniker": "ProjetoFinal\\Connections.cs",
+              "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\Connections.cs",
+              "RelativeToolTip": "ProjetoFinal\\Connections.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:55:07.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormInicial.cs",
+              "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\FormInicial.cs",
+              "RelativeDocumentMoniker": "ProjetoFinal\\FormInicial.cs",
+              "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\FormInicial.cs",
+              "RelativeToolTip": "ProjetoFinal\\FormInicial.cs",
+              "ViewState": "AQIAAPAAAAAAAAAAAAAiwPUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T11:04:32.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FormInicial.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\FormInicial.cs",
               "RelativeDocumentMoniker": "ProjetoFinal\\FormInicial.cs",
@@ -177,108 +130,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T07:02:25.906Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MudarTerapeuta.cs",
-              "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\MudarTerapeuta.cs",
-              "RelativeDocumentMoniker": "ProjetoFinal\\MudarTerapeuta.cs",
-              "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\MudarTerapeuta.cs",
-              "RelativeToolTip": "ProjetoFinal\\MudarTerapeuta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T14:14:44.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DadosPaciente.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\DadosPaciente.cs",
-              "RelativeDocumentMoniker": "ProjetoFinal\\DadosPaciente.cs",
-              "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\DadosPaciente.cs [Design]",
-              "RelativeToolTip": "ProjetoFinal\\DadosPaciente.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T13:49:36.06Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormEntrar.cs",
-              "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\FormEntrar.cs",
-              "RelativeDocumentMoniker": "ProjetoFinal\\FormEntrar.cs",
-              "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\FormEntrar.cs",
-              "RelativeToolTip": "ProjetoFinal\\FormEntrar.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T14:10:16.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FormEntrar.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\FormEntrar.cs",
-              "RelativeDocumentMoniker": "ProjetoFinal\\FormEntrar.cs",
-              "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\FormEntrar.cs [Design]",
-              "RelativeToolTip": "ProjetoFinal\\FormEntrar.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T14:10:18.161Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DadosPaciente.cs",
-              "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\DadosPaciente.cs",
-              "RelativeDocumentMoniker": "ProjetoFinal\\DadosPaciente.cs",
-              "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\DadosPaciente.cs",
-              "RelativeToolTip": "ProjetoFinal\\DadosPaciente.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAEwHAAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T13:49:33.1Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RegistoCrise.cs",
-              "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\RegistoCrise.cs",
-              "RelativeDocumentMoniker": "ProjetoFinal\\RegistoCrise.cs",
-              "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\RegistoCrise.cs",
-              "RelativeToolTip": "ProjetoFinal\\RegistoCrise.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T13:45:05.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Connections.cs",
-              "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\Connections.cs",
-              "RelativeDocumentMoniker": "ProjetoFinal\\Connections.cs",
-              "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\Connections.cs",
-              "RelativeToolTip": "ProjetoFinal\\Connections.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T10:55:07.859Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FormInicial.cs",
-              "DocumentMoniker": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\FormInicial.cs",
-              "RelativeDocumentMoniker": "ProjetoFinal\\FormInicial.cs",
-              "ToolTip": "C:\\Users\\ana_s\\Desktop\\Reposit\u00F3riosGitHub\\ProjetoRegisto\\ProjetoFinal\\FormInicial.cs",
-              "RelativeToolTip": "ProjetoFinal\\FormInicial.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T11:04:32.219Z",
-              "EditorCaption": ""
             }
           ]
         }

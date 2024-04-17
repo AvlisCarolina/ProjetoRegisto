@@ -12,6 +12,7 @@ namespace ProjetoFinal
 {
     public partial class FormInicial : Form
     {
+        
         //instanciar forms
         public int atualLogin;
  
@@ -20,7 +21,7 @@ namespace ProjetoFinal
         RegistoDiario formRegistoDiario = new RegistoDiario();
         VerRegistosPaciente formVerRegistosPaciente = new VerRegistosPaciente();
         informacaoTerapeuta formInformacaoTerapeuta = new informacaoTerapeuta();
-        MudarTerapeuta formMudarTerapeuta = new MudarTerapeuta();
+       
 
         DadosTerapeuta formDadosTerapeuta = new DadosTerapeuta();
         InformacaoPacientes formInformacaoPacientes = new InformacaoPacientes();
@@ -32,12 +33,16 @@ namespace ProjetoFinal
         
         public FormInicial()
         {
+            
             InitializeComponent();
             formIniciarSessao = new FormEntrar(this);
+            eliminarContaToolStripMenuItem.Visible = false;
+            eliminarContaToolStripMenuItem1.Visible = false;
         }
 
         private void FormInicial_Load(object sender, EventArgs e)
         {
+            
             pacienteToolStripMenuItem.Visible = false;
             terapeutaToolStripMenuItem.Visible = false;
             terminarSessãoToolStripMenuItem.Visible = false;
@@ -47,12 +52,6 @@ namespace ProjetoFinal
 
         private void tsmEntrar_Click(object sender, EventArgs e)
         {
-            
-            // mudar label do login/singup pada "Bem vindo + {Nome utilizador}"
-            // tornar visível a parte paciente ou terapeuta ou ambos, consoante o tipo de sessão.
-            // Depois de entrar desativar visibilidade da opção Iniciar sessão e Registar do login
-            // tornar visível a opção de Terminar Sessão
-
             if (formIniciarSessao.IsDisposed)
             {
                 formIniciarSessao = new FormEntrar(this);
@@ -65,7 +64,7 @@ namespace ProjetoFinal
 
         private void tsmRegistar_Click(object sender, EventArgs e)
         {
-            // Depois do registo abre form de entrar
+            
 
             if (formRegistar.IsDisposed)
             {
@@ -175,22 +174,6 @@ namespace ProjetoFinal
 
         }
 
-        private void mudarTerapeutaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (formMudarTerapeuta.IsDisposed)
-            {
-                formMudarTerapeuta = new MudarTerapeuta();
-            }
-            formMudarTerapeuta.MdiParent = this;
-            formMudarTerapeuta.StartPosition = FormStartPosition.CenterScreen;
-            //formMudarTerapeuta.WindowState = FormWindowState.Maximized;
-            formMudarTerapeuta.MinimizeBox = false;
-            formMudarTerapeuta.MaximizeBox = false;
-
-            formMudarTerapeuta.Show();
-            formMudarTerapeuta.Activate();
-        }
-
         private void dadosPacientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (formInformacaoPacientes.IsDisposed)
@@ -236,7 +219,6 @@ namespace ProjetoFinal
             {
                 terapeutaToolStripMenuItem.Visible = true;
                 pacienteToolStripMenuItem.Visible = false;
-
             }
 
             else if (acesso == "Paciente")
@@ -250,7 +232,6 @@ namespace ProjetoFinal
                 pacienteToolStripMenuItem.Visible = true;
             }
         }
-
         private void terminarSessãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             toolStripMenuItem1.Text = "LogIn/SingUp";
@@ -272,6 +253,12 @@ namespace ProjetoFinal
         private void fecharAppToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
         }
     }
 }

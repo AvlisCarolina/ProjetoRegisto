@@ -117,5 +117,34 @@ namespace ProjetoFinal
             }
             dataReader1.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string[] texto = cbTerapeuta.Text.Split(new Char[] { '-' });
+            string idTerapeuta = texto[0];
+
+            int idUtilizador;
+            idUtilizador = ((FormInicial)this.MdiParent).atualLogin;
+
+            DialogResult dialogResult = MessageBox.Show("Tem a certeza que quer alterar para o terapeuta selecionado?", "Confirmação Alteração.", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                string queryMudarTerapeuta = $@"
+                UPDATE pacientes SET idTerapeuta = {idTerapeuta}
+	                WHERE pacientes.idUtilizador = {idUtilizador};";
+
+                SQLiteCommand cmd = new SQLiteCommand(queryMudarTerapeuta, ligacao.OpenConnection());
+                cmd.ExecuteNonQuery();
+
+                TerapeutaAtual();
+                MostrarTerapeutas();
+
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                txtNomeAtual.Focus();
+            }
+            Close();
+        }
     }
 }
